@@ -30,6 +30,46 @@
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
+<script>
+    $('#myModal').modal('show')
+  </script>
+  <script src="mock_questions1.js"></script>
+  <script src="mock_questions.js"></script>  
+  <style>
+    
+    #signup{
+      margin-left: 10%;
+      width: 150px;
+    }
+    #login{
+      width: 150px;
+    }
+    
+    #loginpage{
+      margin-top: 30px;
+      margin-left:80px;
+      display: none;    
+    }
+    #signuppage{
+      margin-top: 30px;
+      margin-left:80px;
+      display: none; 
+         
+    }
+    
+  
+    #f1{
+      position: fixed;
+      bottom: 0;
+      width: 60%;
+  }
+  
+  
+    
+    
+    
+  </style>
+ 
 
 <body class="theme-red">
     <!-- Page Loader -->
@@ -69,7 +109,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../../index.html">ADMINBSB - MATERIAL DESIGN</a>
+                <a class="navbar-brand" href="../../../index.html">Scraby</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -278,8 +318,8 @@
                     <img src="../../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User-name</div>
+                    <div class="email">User@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -306,23 +346,24 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../../../pages/typography.html">
+                        <a href="signup.html" type="button" id="click23"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
                             <i class="material-icons">text_fields</i>
-                            <span>Typography</span>
+                            <span>sign-in</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../../../pages/helper-classes.html">
+                        <a href="signup.html" type="button" id="click24" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
                             <i class="material-icons">layers</i>
-                            <span>Helper Classes</span>
+                            <span>sign-up</span>
                         </a>
+                        <!-- <button type="button" id="click24" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Login</button> -->
                     </li>
                     <li class="active">
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="javascript:void(0);"    >
                             <i class="material-icons">widgets</i>
-                            <span>Widgets</span>
+                            <span>sign-in with Google</span>
                         </a>
-                        <ul class="ml-menu">
+                        <!-- <ul class="ml-menu">
                             <li class="active">
                                 <a href="javascript:void(0);" class="menu-toggle">
                                     <span>Cards</span>
@@ -361,9 +402,9 @@
                                     </li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">swap_calls</i>
                             <span>User Interface (UI)</span>
@@ -440,8 +481,8 @@
                                 <a href="../../../pages/ui/waves.html">Waves</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Forms</span>
@@ -466,13 +507,14 @@
                                 <a href="../../../pages/forms/editors.html">Editors</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
                             <span>Tables</span>
                         </a>
                         <ul class="ml-menu">
+
                             <li>
                                 <a href="../../../pages/tables/normal-tables.html">Normal Tables</a>
                             </li>
@@ -483,8 +525,8 @@
                                 <a href="../../../pages/tables/editable-table.html">Editable Tables</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
                             <span>Medias</span>
@@ -497,8 +539,8 @@
                                 <a href="../../../pages/medias/carousel.html">Carousel</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
                             <span>Charts</span>
@@ -520,8 +562,8 @@
                                 <a href="../../../pages/charts/jquery-knob.html">Jquery Knob</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">content_copy</i>
                             <span>Example Pages</span>
@@ -546,8 +588,8 @@
                                 <a href="../../../pages/examples/500.html">500 - Server Error</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">map</i>
                             <span>Maps</span>
@@ -563,8 +605,8 @@
                                 <a href="../../../pages/maps/jvectormap.html">jVectorMap</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">trending_down</i>
                             <span>Multi Level Menu</span>
@@ -605,14 +647,14 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="../../changelogs.html">
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li>
-                    <li class="header">LABELS</li>
+                    </li> -->
+                    <!-- <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">
                             <i class="material-icons col-red">donut_large</i>
@@ -630,17 +672,17 @@
                             <i class="material-icons col-light-blue">donut_large</i>
                             <span>Information</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- #Menu -->
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+                    &copy; 2017 - 2018 <a href="javascript:void(0);">Scraby</a>.
                 </div>
                 <div class="version">
-                    <b>Version: </b> 1.0.5
+                    <b>Version: </b> 1.0.6
                 </div>
             </div>
             <!-- #Footer -->
@@ -802,9 +844,9 @@
                     <div class="card">
                         <div class="header bg-red">
                             <h2>
-                                Red - Title <small>Description text here...</small>
+                              UPSC <small></small>
                             </h2>
-                            <ul class="header-dropdown m-r--5">
+                            <!-- <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
@@ -815,10 +857,10 @@
                                         <li><a href="javascript:void(0);">Something else here</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="body">
-                            Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                                The Civil Services Examinationis a nationwide competitive examination in India conducted by the Union Public Service Commission for recruitment to various Civil Services of  ...
                         </div>
                     </div>
                 </div>
@@ -826,9 +868,9 @@
                     <div class="card">
                         <div class="header bg-cyan">
                             <h2>
-                                Cyan - Title <small>Description text here...</small>
+                               SPSC <small></small>
                             </h2>
-                            <ul class="header-dropdown m-r--5">
+                            <!-- <ul class="header-dropdown m-r--5">
                                 <li>
                                     <a href="javascript:void(0);">
                                         <i class="material-icons">mic</i>
@@ -844,39 +886,171 @@
                                         <li><a href="javascript:void(0);">Something else here</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="body">
-                            Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                                State public service commission & central public service commission  govt. commission for recruiting civil servants.this commission also recruit for other services like medical & engineering services...
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="card">
-                        <div class="header bg-green">
-                            <h2>
-                                Green - Title <small>Description text here...</small>
-                            </h2>
-                            <ul class="header-dropdown m-r-0">
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <i class="material-icons">info_outline</i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <i class="material-icons">help_outline</i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                        <div class="card">
+                            <div class="header bg-green">
+                                <h2>
+                                     SSC<small></small>
+                                </h2>
+                                <!-- <ul class="header-dropdown m-r-0">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="material-icons">info_outline</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="material-icons">help_outline</i>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="body">
+                                    SSC Combined Graduate Level Examination. Combined Graduate Level Examination, often referred to as SSC CGL is an examination conducted to recruit staff to various posts in ministries, departments  ...                        </div>
                         </div>
                     </div>
-                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-orange">
+                                <h2>
+                                    IIT <small></small>
+                                </h2>
+                                <!-- <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="body">
+                                    JEE Mains/Advanced (JEE-Advanced), formerly the Indian Institutes of Technology-Joint Entrance Examination (IIT-JEE) is an annual engineering college entrance examination in India. It is conducted by  IIT
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="header bg-blue-grey">
+                                    <h2>
+                                       NEET<small></small>
+                                    </h2>
+                                    <!-- <ul class="header-dropdown m-r--5">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <i class="material-icons">mic</i>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">more_vert</i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="javascript:void(0);">Action</a></li>
+                                                <li><a href="javascript:void(0);">Another action</a></li>
+                                                <li><a href="javascript:void(0);">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                                <div class="body">
+                                        The National Eligibility cum Entrance Test or NEET-UG is an entrance examination in India, for students who wish to study graduate medical course (MBBS) and dental course (BDS) in government or private medical...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="header bg-red">
+                                    <h2>
+                                      MBA <small></small>
+                                    </h2>
+                                    <!-- <ul class="header-dropdown m-r--5">
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">more_vert</i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="javascript:void(0);">Action</a></li>
+                                                <li><a href="javascript:void(0);">Another action</a></li>
+                                                <li><a href="javascript:void(0);">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                                <div class="body">
+                                     Master of business administration is a graduate degree achieved at a university or college that provides theoretical and practical training to help graduates gain a better understanding of general business management functions. ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="header bg-orange">
+                                    <h2>
+                                        RRB <small></small>
+                                    </h2>
+                                    <!-- <ul class="header-dropdown m-r--5">
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">more_vert</i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="javascript:void(0);">Action</a></li>
+                                                <li><a href="javascript:void(0);">Another action</a></li>
+                                                <li><a href="javascript:void(0);">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                                <div class="body">
+                                    Regional Rural Banks (RRBs) are scheduled commercial banks (Government banks) operating at regional level in different States of India. They have been created with a view to serve primarily the rural areas of India with basic banking and financial services. ...
+                                </div>
+                            </div>
+                        </div>
+
+                
+                
+                    
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-pink">
+                                <h2>
+                                    Pink - Title <small>Description text here...</small>
+                                </h2> -->
+                                <!-- <ul class="header-dropdown m-r-0">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="material-icons">info_outline</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="material-icons">help_outline</i>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            <!-- </div>
+                            <div class="body">
+                                Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                            </div>
+                        </div>
+                    </div> -->
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="header bg-orange">
@@ -954,16 +1128,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- #END# Basic Example -->
             <!-- Colored Card - With Loading -->
-            <div class="block-header">
+            <!-- <div class="block-header">
                 <h2>
                     COLORED CARDS - WITH LOADING
                     <small>Please click the refresh button right top of cards you want to activate loading. Taken from <a href="https://github.com/vadimsva/waitMe" target="_blank">https://github.com/vadimsva/waitMe</a></small>
                 </h2>
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="header bg-light-blue">
@@ -1051,9 +1225,84 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- #END# Colored Card - With Loading -->
         </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="width: 400px; height: 600px; margin-left: 100px" >
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="exampleModalLabel" style="text-align: center">Scraby</h4>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <span>
+                      <button class="btn btn-primary" id="signup">Signup</button>
+                      <button class="btn btn-primary" id="login">Login</button>
+                    </span>
+                    
+                    
+                    
+                    <div id="loginpage" >
+                      <input type="email" placeholder="Email" /><br><br>
+                     <input type="password" placeholder="password"/>
+                      <br><br>
+                      <button class="btn btn-primary" style="margin-left :60px; margin-top:5px;">Submit</button>
+                    </div>
+                    
+                    <div id="signuppage">
+                          <div id="form-group">
+                           
+                                <input type="Name" placeholder="Name" /><br><br>
+                          </div>
+                          <div id="form-group">
+                             
+                              <input type="email" placeholder="Email" /><br><br>
+                        </div>
+                        <div  id="form-group">
+                          
+                            <input type="password" placeholder="Password" /><br><br>
+                      </div>
+                      <br>
+                      <button class="btn btn-primary" style="margin-left :60px;">Submit</button>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  <div id="f1">      
+                    <div class="form-group">
+                      <!-- <label for="recipient-name" class="control-label"></label>
+                        <input type="text" class="form-control" id="recipient-name"> -->
+                        <button class="btn btn-primary" style="width:100%;">Login via Facebook</button>
+                      </div>
+                      <div class="form-group">
+                        <!-- <label for="message-text" class="control-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea> -->
+                          <button class="btn btn-danger" style="width:100%;">Login via Google</button>
+                        </div>
+                        
+                        <div class="form-group">
+                          <button  style="width:100%; background-color:#0077B5 " class="btn btn-primary">Login via linkedIn</button>
+                        </div>
+                        
+                        <div class="form-group" >
+                          <button class="btn btn-info" style="width:100%;">Login via twiter</button>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>  
+                  </div>
+                  
+                  
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div> -->
+                </div>
     </section>
 
     <!-- Jquery Core Js -->
